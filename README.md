@@ -25,7 +25,9 @@ mkdir work
 cd work
 mkdir conf
 vi conf/nginx.conf
-
+vi /etc/systemd/system/nginx.service
+systemctl enable nginx.service
+systemctl start nginx.service
 ```
 
 ```
