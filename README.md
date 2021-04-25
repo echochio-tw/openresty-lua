@@ -52,7 +52,3 @@ yum groups mark install "Development Tools"
 yum groups mark convert "Development Tools"
 yum groupinstall "Development Tools"
 ```
-
-```
-./configure  --with-threads --with-file-aio --add-module=/root/nginx-accesskey-2.0.5 --add-module=/root/ngx_cache_purge-2.3 
-```
