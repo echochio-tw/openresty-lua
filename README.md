@@ -18,6 +18,13 @@ cd openresty-1.19.3.1
 ./configure --add-module=/root/nginx-accesskey-2.0.5 --add-module=/root/ngx_cache_purge-2.3 
 gmake
 gmake install
+cd ..
+export PATH="/usr/local/openresty/bin:$PATH"
+opm get openresty/lua-resty-string
+mkdir work
+cd work
+mkdir conf
+vi conf/nginx.conf
 
 ```
 
