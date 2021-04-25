@@ -24,10 +24,24 @@ opm get openresty/lua-resty-string
 mkdir work
 cd work
 mkdir conf
+mkdir logs
 vi conf/nginx.conf
 vi /etc/systemd/system/nginx.service
 systemctl enable nginx.service
 systemctl start nginx.service
+ls
+```
+
+```
+total 28
+drwx------ 2 nobody root 4096 Apr 25 23:17 client_body_temp
+drwxr-xr-x 2 root   root 4096 Apr 25 23:10 conf
+drwx------ 2 nobody root 4096 Apr 25 23:17 fastcgi_temp
+drwxr-xr-x 2 root   root 4096 Apr 25 23:18 logs
+drwx------ 2 nobody root 4096 Apr 25 23:17 proxy_temp
+drwx------ 2 nobody root 4096 Apr 25 23:17 scgi_temp
+drwx------ 2 nobody root 4096 Apr 25 23:17 uwsgi_temp
+[root@localhost work]#
 ```
 
 ```
