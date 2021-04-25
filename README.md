@@ -15,7 +15,7 @@ tar zxvf ngx_cache_purge-2.3.tar.gz
 tar zxvf nginx-accesskey-2.0.5.tar.gz
 tar zxvf openresty-1.19.3.1.tar.gz
 cd openresty-1.19.3.1
-./configure --add-module=/root/nginx-accesskey-2.0.5 --add-module=/root/ngx_cache_purge-2.3 
+./configure  --with-threads --with-file-aio --add-module=/root/nginx-accesskey-2.0.5 --add-module=/root/ngx_cache_purge-2.3
 gmake
 gmake install
 cd ..
