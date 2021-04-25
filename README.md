@@ -31,5 +31,5 @@ yum groupinstall "Development Tools"
 ```
 
 ```
-./configure  --with-luajit  --with-stream --with-threads --with-file-aio --add-module=/root/nginx-accesskey-2.0.5 --add-module=/root/ngx_cache_purge-2.3 
+./configure  --with-threads --with-file-aio --add-module=/root/nginx-accesskey-2.0.5 --add-module=/root/ngx_cache_purge-2.3 
 ```
