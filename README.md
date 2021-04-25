@@ -29,7 +29,7 @@ vi conf/nginx.conf
 vi /etc/systemd/system/nginx.service
 systemctl enable nginx.service
 systemctl start nginx.service
-ls
+ls -l
 ```
 
 ```
