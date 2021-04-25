@@ -11,10 +11,11 @@ yum install -y readline-devel pcre-devel openssl-devel
 yum install libpcre3-dev libssl-dev perl make build-essential curl libreadline-dev libncurses5-dev -y
 yum install pcre-devel openssl-devel gcc curl
 yum install perl-Digest-MD5 -y
+tar zxvf ngx_cache_purge-2.3.tar.gz
 tar zxvf nginx-accesskey-2.0.5.tar.gz
 tar zxvf openresty-1.19.3.1.tar.gz
 cd openresty-1.19.3.1
-./configure --add-module=/root/nginx-accesskey-2.0.5
+./configure --add-module=/root/nginx-accesskey-2.0.5 --add-module=/root/ngx_cache_purge-2.3 
 gmake
 gmake install
 
@@ -30,5 +31,5 @@ yum groupinstall "Development Tools"
 ```
 
 ```
-./configure  --with-luajit  --with-stream --with-threads --with-file-aio --add-module=/root/nginx-accesskey-master --add-module=/root/ngx_cache_purge-2.3 
+./configure  --with-luajit  --with-stream --with-threads --with-file-aio --add-module=/root/nginx-accesskey-2.0.5 --add-module=/root/ngx_cache_purge-2.3 
 ```
