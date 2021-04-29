@@ -52,3 +52,12 @@ yum groups mark install "Development Tools"
 yum groups mark convert "Development Tools"
 yum groupinstall "Development Tools"
 ```
+
+
+```
+local b = url:match('(https%:%/%/.-%?key%='..r_key..'%&time%='..r_time..')')
+print(b)
+
+local c = url:match('(https%:%/%/.-png%?key%='..r_key..'%&time%='..r_time..')')
+print(c)
+```
