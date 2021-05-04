@@ -19,6 +19,19 @@ cd openresty-1.19.3.1
 gmake
 gmake install
 cd ..
+wget http://www.cmake.org/files/v2.8/cmake-2.8.10.2.tar.gz
+tar xvzf cmake-2.8.10.2.tar.gz
+cd cmake-2.8.10.2
+./bootstrap
+gmake
+gmake install
+cmake --version
+wget https://github.com/brimworks/lua-zlib/archive/master.zip
+unzip lua-zlib-master.zip
+cd lua-zlib-master
+cmake -DLUA_INCLUDE_DIR=/usr/local/openresty/luajit/include/luajit-2.1 -DLUA_LIBRARIES=/usr/local/openresty/luajit/lib -DUSE_LUAJIT=ON -DUSE_LUA=OFF
+make
+cp zlib.so /usr/local/openresty/lualib/zlib.so
 export PATH="/usr/local/openresty/bin:$PATH"
 opm get openresty/lua-resty-string
 mkdir work
