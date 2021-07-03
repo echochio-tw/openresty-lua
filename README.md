@@ -58,12 +58,30 @@ drwx------ 2 nobody root 4096 Apr 25 23:17 uwsgi_temp
 ```
 
 ```
-yum clean all
-yum group list
-yum repolist all
-yum groups mark install "Development Tools"
-yum groups mark convert "Development Tools"
-yum groupinstall "Development Tools"
+yum install -y bison
+yum install -y byacc
+yum install -y cscope
+yum install -y ctags
+yum install -y cvs
+yum install -y diffstat
+yum install -y doxygen
+yum install -y flex
+yum install -y gcc
+yum install -y gcc-c++
+yum install -y gcc-gfortran
+yum install -y gettext
+yum install -y git
+yum install -y indent
+yum install -y intltool
+yum install -y libtool
+yum install -y patch
+yum install -y patchutils
+yum install -y rcs
+yum install -y redhat-rpm-config
+yum install -y rpm-build
+yum install -y subversion
+yum install -y swig
+yum install -y systemtap
 ```
 
 
